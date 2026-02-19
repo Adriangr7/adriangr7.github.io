@@ -3,58 +3,89 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Adrián Garrido | Infraestructura Automatizada</title>
+<title>Adrián Garrido Real | Ingeniero de Telecomunicaciones</title>
 
 <style>
+:root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --accent: #38bdf8;
+    --text: #f1f5f9;
+    --subtle: #94a3b8;
+}
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0f172a;
-    color: #f1f5f9;
+    font-family: "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
 }
 
 header {
-    padding: 80px 20px;
     text-align: center;
+    padding: 80px 20px 40px 20px;
 }
 
-h1 {
-    font-size: 40px;
+header h1 {
+    font-size: 42px;
     margin-bottom: 10px;
 }
 
-h2 {
-    font-weight: normal;
-    color: #94a3b8;
-}
-
-section {
-    padding: 60px 20px;
-    max-width: 1000px;
+header h2 {
+    font-weight: 400;
+    color: var(--subtle);
+    max-width: 900px;
     margin: auto;
 }
 
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
 .card {
-    background-color: #1e293b;
+    background: var(--card);
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 12px;
     margin-bottom: 30px;
 }
 
+h3 {
+    border-left: 4px solid var(--accent);
+    padding-left: 12px;
+    margin-bottom: 20px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
 a {
-    color: #38bdf8;
+    color: var(--accent);
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
+.badge {
+    display: inline-block;
+    background: #334155;
+    padding: 6px 10px;
+    margin: 5px 5px 5px 0;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
 footer {
     text-align: center;
-    padding: 30px;
-    color: #94a3b8;
+    padding: 40px 20px;
+    color: var(--subtle);
+    font-size: 14px;
 }
 </style>
 </head>
@@ -62,53 +93,116 @@ footer {
 <body>
 
 <header>
-    <h1>Adrián García</h1>
-    <h2>Infraestructura Automatizada & Data Center Networking</h2>
+    <h1>Adrián Garrido Real</h1>
+    <h2>
+        Ingeniero de Telecomunicaciones (ETSI Sevilla) especializado en comunicaciones,
+        redes e infraestructuras automatizadas. Interesado en ciberseguridad y entornos cloud,
+        con enfoque en arquitecturas modernas y automatización avanzada.
+    </h2>
 </header>
 
 <section>
-    <div class="card">
-        <h3>🚀 Proyecto Destacado</h3>
-        <p><strong>Data Center Automatizado – VXLAN EVPN + BGP + Kubernetes</strong></p>
-        <p>
-        Arquitectura Spine-Leaf con BGP como underlay, VXLAN EVPN como overlay,
-        NetBox como Source of Truth y automatización completa mediante Ansible.
-        Incluye despliegue de servicios sobre Kubernetes (k3s).
-        </p>
-        <p>
-        <a href="https://github.com/Adriangr7/Proyecto-DataCenter-Automatizado" target="_blank">
-        Ver proyecto en GitHub →
-        </a>
-        </p>
-    </div>
 
-    <div class="card">
-        <h3>🛠 Tecnologías</h3>
-        <p>
-        BGP · VXLAN · EVPN · Ansible · NetBox · Kubernetes · Docker · Linux · Git
-        </p>
-    </div>
+<div class="card">
+<h3>🧠 Proyectos Destacados</h3>
 
-    <div class="card">
-        <h3>🎯 Enfoque Profesional</h3>
-        <p>
-        Especializado en diseño y automatización de infraestructuras de red modernas,
-        orientado a entornos NetDevOps y arquitecturas de centro de datos escalables.
-        </p>
-    </div>
+<h4>🔹 Análisis de rendimiento de redes IPv6 (TFG)</h4>
+<p>
+Estudio comparativo del rendimiento de redes IPv6 evaluando:
+</p>
+<ul>
+<li>IPv6 nativo proporcionado por operador</li>
+<li>Túneles y VPNs en entornos sin soporte IPv6</li>
+<li>Análisis de latencia, jitter, pérdida de paquetes y resolución DNS</li>
+</ul>
+<p><strong>Calificación:</strong> 10 (Sobresaliente)</p>
+<p><strong>Estado:</strong> Finalizado y documentado</p>
 
-    <div class="card">
-        <h3>📫 Contacto</h3>
-        <p>
-        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/Adriangr7" target="_blank">GitHub</a>
-        </p>
-    </div>
+<hr>
+
+<h4>🔹 Diseño y despliegue de red de Campus Universitario</h4>
+<p>Proyecto autodidacta completo incluyendo pequeño Data Center:</p>
+<ul>
+<li>Arquitectura jerárquica Core – Distribución – Acceso</li>
+<li>VLANs y segmentación por servicios</li>
+<li>Alta disponibilidad con HSRP y EtherChannel</li>
+<li>OSPF como protocolo dinámico</li>
+<li>Infraestructura WiFi con WLC</li>
+<li>Servicios centralizados: DHCP, DNS, NTP, Syslog, AAA</li>
+</ul>
+<p><strong>Estado:</strong> Publicado en GitHub</p>
+
+<hr>
+
+<h4>🔹 Simulación de Data Center moderno (VXLAN EVPN)</h4>
+<p>Proyecto avanzado basado en arquitectura Spine–Leaf:</p>
+<ul>
+<li>VXLAN EVPN con BGP como plano de control</li>
+<li>Automatización completa con Ansible</li>
+<li>NetBox como Source of Truth</li>
+<li>Red de gestión independiente</li>
+<li>Docker y Kubernetes (k3s)</li>
+<li>Fundamentos de CI/CD</li>
+</ul>
+<p><strong>Estado:</strong> Publicación final en GitHub</p>
+
+</div>
+
+<div class="card">
+<h3>🛠 Tecnologías y Habilidades</h3>
+
+<p><strong>Redes:</strong></p>
+<span class="badge">TCP/IP</span>
+<span class="badge">IPv4 / IPv6</span>
+<span class="badge">OSPF</span>
+<span class="badge">BGP</span>
+<span class="badge">HSRP</span>
+<span class="badge">MPLS</span>
+<span class="badge">VLANs</span>
+<span class="badge">QoS</span>
+
+<p><strong>Data Center & SDN:</strong></p>
+<span class="badge">VXLAN EVPN</span>
+<span class="badge">Spine–Leaf</span>
+<span class="badge">SDN Concepts</span>
+
+<p><strong>Automatización:</strong></p>
+<span class="badge">Ansible</span>
+<span class="badge">Python</span>
+<span class="badge">Bash</span>
+
+<p><strong>Cloud & Virtualización:</strong></p>
+<span class="badge">Docker</span>
+<span class="badge">Kubernetes</span>
+<span class="badge">VMware</span>
+
+<p><strong>Herramientas:</strong></p>
+<span class="badge">GNS3</span>
+<span class="badge">EVE-NG</span>
+<span class="badge">NetBox</span>
+
+</div>
+
+<div class="card">
+<h3>📚 Formación y Certificaciones</h3>
+<ul>
+<li>Grado en Ingeniería de las Tecnologías de Telecomunicación – Universidad de Sevilla (ETSI)</li>
+<li>Preparación Cisco CCNA (examen próximo)</li>
+<li>Inglés B2 – Aptis ESOL (British Council, 2025)</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>📫 Contacto</h3>
+<p>
+LinkedIn:
+<a href="https://linkedin.com/in/adrian-garrido-136343334" target="_blank">
+linkedin.com/in/adrian-garrido-136343334
+</a>
+</p>
+<p>Email: adrian2002.ag21@gmail.com</p>
+</div>
+
 </section>
 
-<footer>
-    © 2026 Adrián Garrido
-</footer>
-
-</body>
-</html>
+<f
